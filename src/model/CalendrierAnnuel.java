@@ -24,7 +24,7 @@ public class CalendrierAnnuel {
 
 		public void reserver(int jour) throws IllegalStateException {
 			if (!estLibre(jour)) {
-				throw new IllegalStateException("IllegalStateException");
+				throw new IllegalStateException("jour deja reserver");
 			}
 			jours[jour-1] = true;
 		}
