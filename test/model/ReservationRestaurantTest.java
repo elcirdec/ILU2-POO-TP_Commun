@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class ReservationRestaurantTest {
 	static ReservationRestaurant reservation;
-	static final int NB_PERSONNES = 2;
+	static final int NUM_TABLE = 2;
 	static final int NUM_SERVICE = 1;
 	static final int JOUR = 10;
 	static final int MOIS = 12;
@@ -16,7 +16,7 @@ class ReservationRestaurantTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() {
-		reservation = new ReservationRestaurant(JOUR, MOIS, NUM_SERVICE, NB_PERSONNES);
+		reservation = new ReservationRestaurant(JOUR, MOIS, NUM_SERVICE, NUM_TABLE);
 	}
 
 	@Test
